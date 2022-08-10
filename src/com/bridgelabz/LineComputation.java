@@ -42,6 +42,18 @@ public class LineComputation {
 	 else
 		 System.out.println("Line are not equal");
 	}
+	/*
+	 * UC3 : check two lines is equal,greater or less than the other line
+	 */
+	static public void compareLine(Double line1,Double line2)
+	{
+		if(line1.compareTo(line2) == 1)
+			System.out.println("line one is greater than line two");
+		else if(line1.compareTo(line2) == -1)
+			System.out.println("line one is less than line two");
+		else
+			System.out.println("both lines are equal");
+	}
 
 	public static void main(String[] args) {
 		System.out.println("Welcome To Line Comparison Computation Program");
@@ -55,6 +67,7 @@ public class LineComputation {
 		System.out.println("Distance Btw Two Points:"+line2);
 
 		equlity(line1,line2);
+		compareLine(line1,line2);
 
 	}
 }
